@@ -1,0 +1,27 @@
+useDynLib(DIFM, .registration=TRUE)
+importFrom(Rcpp, evalCpp)
+export(buildH,
+	difm.hyp.parm,
+	difm.model.attributes,
+	DIFMcpp,
+	DIFMR,
+	marginal.d,
+	permutation.order,
+	permutation.scale,
+	plot_B.CI,
+	plot_B.spatial,
+	plot_sigma2.CI,
+	plot_tau.CI,
+	plot_X.CI,
+	marginal_d_cpp
+	)
+importFrom(Matrix, bdiag)
+importFrom(stats, rnorm, cor, cov, rgamma)
+importFrom(LaplacesDemon, dinvgamma, dinvwishart, rinvwishart)
+importFrom(spdep, poly2nb, nb2mat)
+importFrom(grDevices, colorRampPalette, rgb)
+importFrom(graphics, abline, layout, lines, points, axis)
+importFrom(stats, quantile)
+importFrom(gridExtra, grid.arrange)
+importFrom(sp, spplot)
+
